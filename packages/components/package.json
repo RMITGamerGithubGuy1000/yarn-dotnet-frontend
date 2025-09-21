@@ -1,0 +1,22 @@
+{
+  "name": "@frontend/components",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.123.6",
+    "@frontend/typing": "*",
+    "@frontend/state": "*",
+    "react": "19",
+    "react-dom": "19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  }
+}

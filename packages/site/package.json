@@ -1,0 +1,26 @@
+{
+  "name": "@frontend/site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@frontend/components": "*",
+    "@frontend/state": "*",
+    "@reduxjs/toolkit": "^2.9.0",
+    "formik": "^2.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/react-redux": "^7.1.34",
+    "@vitejs/plugin-react": "^5.0.3",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.6"
+  },
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @frontend/components watch\" \"vite\"",
+    "build": "tsc --build && vite build",
+    "preview": "vite preview"
+  }
+}
